@@ -551,8 +551,8 @@ amazon = [
   "s3fs>=2023.10.0",
 ]
 apache-beam = [
-  "apache-beam>=2.53.0",
-  "pyarrow>=14.0.1",
+  "apache-beam>=2.53.0;python_version != \"3.12\"",
+  "pyarrow>=14.0.1;python_version != \"3.12\"",
 ]
 apache-cassandra = [
   "cassandra-driver>=3.13.0",
@@ -755,7 +755,7 @@ grpc = [
   "grpcio>=1.15.0",
 ]
 hashicorp = [
-  "hvac>=0.10",
+  "hvac>=1.1.0",
 ]
 http = [
   "aiohttp",

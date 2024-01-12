@@ -75,7 +75,9 @@
     "cross-providers-deps": [
       "google"
     ],
-    "excluded-python-versions": [],
+    "excluded-python-versions": [
+      "3.12"
+    ],
     "state": "ready"
   },
   "apache.cassandra": {
