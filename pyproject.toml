@@ -200,7 +200,7 @@ ldap = [
     "python-ldap",
 ]
 leveldb = [
-    "plyvel",
+    "plyvel; python_version < '3.12'",
 ]
 otel = [
     "opentelemetry-exporter-prometheus",
@@ -285,7 +285,8 @@ devel-devscripts = [
     "twine>=4.0.2",
 ]
 devel-duckdb = [
-    "duckdb>=0.9.0",
+    "duckdb==0.9.3.dev2258; python_version == '3.12'",
+    "duckdb>=0.9.0; python_version < '3.12'",
 ]
 # Mypy 0.900 and above ships only with stubs from stdlib so if we need other stubs, we need to install them
 # manually as `types-*`. See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
