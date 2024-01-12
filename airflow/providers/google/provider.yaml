@@ -165,6 +165,8 @@ additional-extras:
     dependencies:
       - apache-airflow-providers-amazon>=2.6.0
 
+excluded-python-versions: ['3.12']
+
 integrations:
   - integration-name: Google Analytics (GA4)
     external-doc-url: https://analytics.google.com/
